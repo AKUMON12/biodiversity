@@ -6,6 +6,11 @@
 
 @layer base {
   :root {
+    /* Light Theme Defaults */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --border: 214.3 31.8% 91.4%; /* This is the missing link! */
+
     /* Primary: Deep Jungle - Represents Life and Forests */
     --primary: 153 46% 15%;
     --primary-foreground: 120 20% 95%;
@@ -83,6 +88,11 @@
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 150 20% 20%;
     --sidebar-ring: 91 100% 44%;
+  }
+
+  .dark {
+    --border: 217.2 32.6% 17.5%;
+    /* ... other variables */
   }
 }
 
