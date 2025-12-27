@@ -101,6 +101,43 @@
     @apply border-border;
   }
 
+  /* 1. Ensure the page scrolls naturally */
+  html,
+  body {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+
+  /* 2. Chrome, Edge, and Safari */
+  ::-webkit-scrollbar {
+    width: 12px; /* Slightly wider to make it easier to see */
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    /* Adding a light background to the track makes the bar more visible */
+    background: hsl(var(--muted) / 0.5);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    /* Using 1.0 opacity (100%) for maximum visibility */
+    background-color: hsl(var(--primary));
+    border-radius: 10px;
+    border: 2px solid hsl(var(--muted) / 0.5); /* This creates a small border around the thumb */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    /* Make it even darker/brighter on hover */
+    background-color: hsl(var(--primary) / 0.8);
+  }
+
+  /* 3. Firefox Support */
+  * {
+    scrollbar-width: auto; /* 'auto' is thicker than 'thin' */
+    scrollbar-color: hsl(var(--primary)) hsl(var(--muted) / 0.5);
+  }
+
   html {
     scroll-behavior: smooth;
   }
