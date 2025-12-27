@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { useMousePosition } from '@/hooks/useMousePosition';
+import { useMousePosition } from '@/hooks/useMousePositions';
 
 interface Particle {
   x: number;
