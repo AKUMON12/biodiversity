@@ -285,3 +285,9 @@
     animation-delay: 800ms;
   }
 }
+
+iframe[src*="lovable"],
+div[class*="lovable"],
+div[id*="lovable"] {
+  display: none !important;
+}
